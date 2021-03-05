@@ -1,6 +1,8 @@
 * {
     margin: 15px;
+    /* border: solid; */
     border-color: coral;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -16,11 +18,13 @@ h1 {
 }
 
 /* Navigation Menu */
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 100px;
+    margin-top: 150px;
+    width: 40px;
 } 
   
 li a {
@@ -32,11 +36,42 @@ li a {
     color:black;
 }
 
-article {
+/* article {
     float: right;
-    /* margin-right: px; */
+    /* margin-right: px;
+} */
+
+.card {
+    float:right;
+    width: 35%;
+    text-align: left;
+    flex: 1 0 200px;
 }
 
+    /* flex: 1 0 200px;
+    padding: 10px;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+  } */
+
+
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+}
+
+li {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 /* Portrait iPhone */
 @media only screen {
