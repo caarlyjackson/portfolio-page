@@ -1,61 +1,63 @@
 * {
-    margin: 15px;
-    /* border: solid; */
-    border-color: coral;
+    margin: 0;
+    border: solid;
+    border-color: rgb(255, 185, 80);
     box-sizing: border-box;
 }
 
+:root {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 h1 {
+    margin-top: 40px;
+    margin-left:var(--margin-left);
     font-family: Helvetica Neue, Arial, sans-serif;
     text-transform: uppercase;
     font-size: 600%;
     text-align: left;
-    margin-right: 30px;
     font-style: oblique;
-    position: fixed;
-    top: 20px;
     width: 100%;
 }
 
 /* Navigation Menu */
-nav ul {
+nav {
+    margin-left:var(--margin-left);
+}
+.nav-list ul a {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100px;
-    margin-top: 150px;
+    /* width: 100px; */
+    /* margin-top: 150px; */
     width: 40px;
 } 
   
-li a {
+ul a {
+    /* width: 50px; */
+    margin: 10px;
     display: block;
-    width: 50px;
     font-family: Arial, Helvetica, sans-serif;
+    color:black;
     font-size: 15px;
     text-decoration: none;
-    color:black;
-}
 
-/* article {
-    float: right;
-    /* margin-right: px;
-} */
+}
 
 .card {
     float:right;
     width: 35%;
     text-align: left;
     flex: 1 0 200px;
+    padding: 10px;
 }
 
-    /* flex: 1 0 200px;
-    padding: 10px;
-    border-style: solid;
-    border-color: red;
-    border-width: 1px;
-  } */
-
-
+/* Body */
+/* Subheadings (H3) */
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300px;
+}
 
 p {
     font-family: Arial, Helvetica, sans-serif;
@@ -65,12 +67,18 @@ p {
 
 h4 {
     font-family: Arial, Helvetica, sans-serif;
-    font-style: oblique;
 }
 
-li {
+.class ol {
+    margin-top: 0;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.block {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
 /* Portrait iPhone */
@@ -83,4 +91,75 @@ li {
 
 section {
     flex: 1;
+}
+
+article {
+    margin-bottom: 40px;
+}
+
+/* Email Hover */
+.button:hover {
+    color: rgb(255, 0, 149);
+    cursor: grab;
+}
+
+a:hover {
+    color: rgb(255, 0, 149);
+    cursor: grab;
+}
+
+ul:hover {
+    color:rgb(255, 0, 149);
+    cursor:grab;
+}
+
+a:active {
+    color: #00ffff;
+}
+
+/* Smaller screens */
+/* Smallest Heading #1 */
+@media screen and (max-width: 940px) {
+    h1 {
+        font-size: 450%;
+    }
+
+    .nav-list nav ul {
+        margin-top: 120px;
+    }
+}
+
+/* Smallest Heading #2 */
+@media screen and (max-width: 750px) {
+    h1 {
+        font-size: 300%;
+    }
+
+    nav ul {
+        margin-top: 97px;
+    }
+}
+
+/* Smallest Heading #3 */
+@media screen and (max-width: 550px) {
+    h1 {
+        font-size: 200%;
+    }
+
+    .card {
+        width: 95%;
+        align-items: center;
+    }
+}
+
+/* Navigation Bar */
+@media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+
+/* Card / Section 1 */
+    .card {
+        flex-direction: column;
+    }
 }
