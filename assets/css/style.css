@@ -48,16 +48,17 @@ ul {
     align-items: flex-start;
     grid-template-columns: 50% 50%;
     margin-top: 30px;
-    margin-left: 18%;
+    margin-left: 9%;
 }
 
 /* Individual Items */
 .flex-item {
     flex-shrink: 1;
     align-items: flex-start;
-    margin: 3.5%;
+    margin: 8%;
+    /* margin: 3.5%; */
     max-width: 450px;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .flex-item:nth-child(odd) {
@@ -69,8 +70,6 @@ ul {
 /* Personal Image */
 .personal-img {
     max-width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 
@@ -78,19 +77,26 @@ ul {
 /* Subheadings */
 h3 {
     font-family: 'Matroska-RppG6.ttf', Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300px;
     padding-bottom: 3%;
+    text-transform: uppercase;
 }
 
 h4 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:monospace;
+    font-size: 20px;
+    margin-left: 35px;
+    padding-top: 15px;
+    padding-bottom: 8px;
 }
 
-h5 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    font-weight: 200;
+h6 {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    text-align: right;
+    /* Incase font - New and imported */
+    /* font-family: 'Inter', sans-serif; */
 }
 
 /* Paragraph Text */
@@ -101,9 +107,16 @@ p {
     line-height: 25px;
 }
 
+.pdf-style {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    margin: 0;
+}
+
 
 article {
-    margin-left: 18%;
+    font-family: ;
+    margin-left: 9%;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 15px;
@@ -111,15 +124,17 @@ article {
 
 .image-two {
     filter: saturate(0);
-    width: 200px;
+    max-width: 100%;
+    max-height: 800px;
 }
 
+/* Portfolio piece description. */
 .work-info {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
     text-align: left;
-    line-height: 25px;
-    padding-top: 15px;
+    line-height: 20px;
+    padding-top: 5px;
 }
 
 
@@ -130,6 +145,9 @@ footer {
 }
 
 h5, .footer-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 200;
     text-align: center;
     vertical-align: middle;
     line-height: 150px;
@@ -152,7 +170,6 @@ a:hover {
     transition: 0.4s;
 }
 
-
 /* Button CLICKED */
 a:active {
     font-style: oblique;
@@ -162,11 +179,9 @@ a:active {
 /* VIEW AND SIZES */
 /* Portrait iPhone */
 @media only screen {
-    min-device-width: 414px;
-    max-device-width: 736px;
-    webkit-min-device-pixel-ratio: 2;
     orientation: portrait;
 }
+
 
 /* Smaller screens */
 /* Small Laptop #1  -  940px */
@@ -193,12 +208,17 @@ a:active {
     a {
         font-size: 17px;
     }
+
+    /* Card / Section 1 */
+    .card {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+      }
 }
 
-@media screen and (max-width: 615px) {
-
-
-}
 
 /* Small iPad #3  -  650px */
 @media screen and (max-width: 650px) {
@@ -208,7 +228,6 @@ a:active {
 
     nav ul {
         padding: 4%;
-    
     }
 
     .flex-container {
@@ -217,31 +236,46 @@ a:active {
         align-items: flex-start;
         grid-template-columns: 100%;
         margin-top: 30px;
-        margin-left: 18%;
+        margin-left: 4%;
         /* margin-bottom: 100px; */
     }
 
     .flex-item {
-        margin-bottom: 8%;
+        margin-bottom: 9.5%;
+        padding:0%;
+    }
+
+    article {
+        margin: 30px;
     }
 }
 
 /* 1 Column */
 /* Just Bigger Than iPhone  -  500px */ */
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 590px) {
     .flex-item {
         margin-bottom: 15%;
+    }
+
+    .flex-container {
+        margin-left: 4%;
     }
 }
 
 /* iPhone  --  350 - 420px */
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 590px) {
         .flex-container {
             margin-left: 0%;
         }
 
         .flex-item {
             padding: 0;
+            margin-top: 45px;
+            margin-bottom: 45px;
+        }
+
+        h3 {
+            font-size: 20px;
         }
 
         .personal-img {
@@ -255,6 +289,10 @@ a:active {
             padding: 12px;
             width: 100%;
         }
+
+        .work-info {
+            padding-top: 25px;
+        }
     }
 
 
@@ -263,14 +301,4 @@ a:active {
     nav {
       flex-direction: column;
     }
-
-/* Card / Section 1 */
-    .card {
-        flex-direction: column;
-    }
-
-    /* S-Dru-Carly */
-    .column {
-        width: 100%;
-      }
 }
