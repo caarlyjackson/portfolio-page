@@ -3,18 +3,17 @@
     /* border: solid; */
     border-color: rgb(255, 185, 80);
     box-sizing: border-box;
+    border-width: 1px;
 }
 
 :root {
     margin-left: 7%;
     margin-right: 7%;
     margin-top: 7%;
-    white:#ffffff;
 }
 
 /* Header */
 h1 {
-    margin-left:var(--margin-left);
     font-family: Helvetica Neue, Arial, sans-serif;
     text-transform: uppercase;
     font-size: 600%;
@@ -34,6 +33,7 @@ a {
     font-size: 18px;
     text-decoration: none;
     margin-left: 3%;
+    line-height: 35px;
 }
 
 ul {
@@ -57,7 +57,7 @@ ul {
     align-items: flex-start;
     margin: 3.5%;
     max-width: 450px;
-    padding: 15px;
+    padding: 20px;
 }
 
 .flex-item:nth-child(odd) {
@@ -77,10 +77,9 @@ ul {
 /* Text */
 /* Subheadings */
 h3 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Matroska-RppG6.ttf', Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 300px;
-    background-color:(var--white);
     padding-bottom: 3%;
 }
 
@@ -99,14 +98,15 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-align: left;
+    line-height: 25px;
 }
 
 
 article {
     margin-left: 18%;
-    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 15px;
-    margin-right: 7%;
 }
 
 .image-two {
@@ -114,33 +114,30 @@ article {
     width: 200px;
 }
 
-.square {
-    width: 300px;
-    border: solid black;
+.work-info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: left;
+    line-height: 25px;
+    padding-top: 15px;
 }
+
 
 /* Footer */
 footer {
     background-color: white;
-    height: 100px;
+    height: 150px;
 }
 
 h5, .footer-text {
     text-align: center;
     vertical-align: middle;
-    line-height: 100px;
+    line-height: 150px;
 }
 
 
-/* Portrait iPhone */
-@media only screen {
-    min-device-width: 414px;
-    max-device-width: 736px;
-    webkit-min-device-pixel-ratio: 2;
-    orientation: portrait;
-}
-
-/* Button Hovers - Header, Navigation Bar and Contact */
+/* EFFECTS */
+/* Button HOVERS - Header, Navigation Bar and Contact */
 h1:hover {
         text-shadow: 2px 3px rgb(255, 0, 149);
 }
@@ -150,18 +147,29 @@ a:hover {
     cursor: grab;
 }
 
-a:active {
-    font-style: oblique;
-}
-
 .image-two:hover {
     filter: saturate(100%);
     transition: 0.4s;
 }
 
 
+/* Button CLICKED */
+a:active {
+    font-style: oblique;
+}
+
+
+/* VIEW AND SIZES */
+/* Portrait iPhone */
+@media only screen {
+    min-device-width: 414px;
+    max-device-width: 736px;
+    webkit-min-device-pixel-ratio: 2;
+    orientation: portrait;
+}
+
 /* Smaller screens */
-/* Smallest Heading #1 */
+/* Small Laptop #1  -  940px */
 @media screen and (max-width: 940px) {
     h1 {
         font-size: 450%;
@@ -176,14 +184,14 @@ a:active {
     }
 }
 
-/* Smallest Heading #2 */
+/* Big iPad #2  -  750px */
 @media screen and (max-width: 750px) {
     h1 {
         font-size: 300%;
     }
 
     a {
-        font-size: 12px;
+        font-size: 17px;
     }
 }
 
@@ -192,10 +200,10 @@ a:active {
 
 }
 
-/* Smallest Heading #3 */
+/* Small iPad #3  -  650px */
 @media screen and (max-width: 650px) {
     h1 {
-        font-size: 200%;
+        font-size: 300%;
     }
 
     nav ul {
@@ -218,12 +226,37 @@ a:active {
     }
 }
 
-/* 1 Column - Larger Margin */
+/* 1 Column */
+/* Just Bigger Than iPhone  -  500px */ */
     @media screen and (max-width: 500px) {
     .flex-item {
         margin-bottom: 15%;
     }
 }
+
+/* iPhone  --  350 - 420px */
+    @media screen and (max-width: 420px) {
+        .flex-container {
+            margin-left: 0%;
+        }
+
+        .flex-item {
+            padding: 0;
+        }
+
+        .personal-img {
+            margin:0%;
+        }
+
+        article {
+            margin:3.5%;
+            margin-right: 15%;
+            margin-left: 0%;
+            padding: 12px;
+            width: 100%;
+        }
+    }
+
 
 /* Navigation Bar */
 @media screen and (max-width: 768px) {
