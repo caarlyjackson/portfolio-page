@@ -173,18 +173,19 @@ h5, .footer-text {
         text-shadow: 2px 3px rgb(255, 0, 149);
 } */
 
-a:hover {
+/* Heading effects */
+/* a:hover {
     color: rgb(255, 0, 149);
     cursor: grab;
+} */
+
+h1:hover {
+    color: violet;
 }
 
 .image-two:hover {
     filter: saturate(100%);
     transition: 0.4s;
-}
-
-h1:hover {
-    color: violet;
 }
 
 /* Button CLICKED */
