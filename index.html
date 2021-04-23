@@ -37,422 +37,215 @@
 </style> -->
 
 <body>
-    <!-- Header/Title -->
-    <header>
-        <h1>Carly Jackson</h1>
-    </header>
+    <section id="home" class="home show">
 
-    <!-- Navigation Bar -->
-    <nav class="nav-list">
-        <ul>
-            <a href="#about-me">About Me</a>
-            <a href="#portfolio-part">Portfolio</a>
-            <a href="#contact">Contact</a>
-            <a href="#resume">Resume</a>
-        </ul>
-    </nav>
+        <!-- Header/Title -->
+        <header>
+            <a id="titleHome">
+                <h1 class="mainTitle" style="font-weight: 600px !important;">Carly Jackson</h1>
+            </a>
+        </header>
 
-    <main>
-
-        <main class="flex-container">
-            <main class="flex-item">
-                <!-- Block 1 -->
-                <!-- <img class="personal-img" src="assets/images/000039_copy.png"> -->
-                <img class="personal-img" src="assets/images/cj.png">
-            </main>
-
-            <!-- Block 2 -->
-            <main class="flex-item">
-                <h2 id="about-me">About Me</h2>
-                <p>I am currently undertaking, and enjoying, the Sydney University & Trilogy Education Services Coding
-                    Boot Camp.</p>
-                <p>In my free time I enjoy writing and creating fictional characters, as well as detailed storylines for
-                    them and other supporting characters. I also like reading - books, quotes and philosophy, drawing,
-                    painting, and creating and editing photography for visual design/content in Adobe Photoshop and
-                    Adobe Illustrator.</p>
-                <p>My personal preference in design and creativity leans towards genres featuring rebellion and chaos,
-                    and contratingly, moral lessons.</p>
-                <p>I appreciate art that forces the audience to contemplate the highlighted social justice,
-                    emotionality, or even taboo issue presented, and in turn, often disturb the comforted, and comfort
-                    the disturbed.</p>
-                <p>I like to classify myself and my work as Chaotic Good; rebellious yet highly moral.</p>
-                <br>
-                <p class="chaotic-good-heading"><b>Chaotic Good</b></p>
-                <p class="chaotic-good-def">Chaotic good is the best alignment you can be because it combines a good
-                    heart with a free spirit. Chaotic good can be a dangerous alignment when it disrupts the order of
-                    society and punishes those who do well for themselves.</p>
-
-                <br>
-                <br>
-                <p class="personal-quote">We do not see the world for what it is.</p>
-                <p class="personal-quote">We see it as we are.</p>
-                <p class="personal-quote">Anaïs Nin</p>
-            </main>
-
-            <!-- Block 3 -->
-            <main class="flex-item">
-                <h2 id="contact">Contact</h2>
-                <ul>
-                    <!-- <a class="button" href="carlysjackson2@gmail.com">Email</a> -->
-                    <a href="mailto:carlysjackson2@gmail.com">Email</a>
-                    <a class="button" href="https://www.linkedin.com/in/carly-jackson-00000">LinkedIn</a>
-                    <a class="button" href="https://github.com/caarlyjackson">GitHub</a>
-                </ul>
-            </main>
-
-            <!-- Block 4 -->
-            <main class="flex-item">
-                <!-- Resume -->
-                <h2 id="resume">Resume</h2>
-                <!-- Education -->
-                <p class="sub-heading">Education</p>
-                <p class="resume-text"><strong>2013 - 2014</strong> &emsp; Girls Grammar School</p>
-                <p class="resume-text"><strong>2015 - 2018</strong> &emsp; Queenwood School for Girls</p>
-                <p class="resume-text"><strong>2018</strong> &emsp; HSC Completed</p>
-                <br>
-
-                <!-- Software Skills -->
-                <p class="sub-heading">Software Skills</p>
-                <p class="explanation-heading">Code & Microsoft</p>
-                <p class="resume-explanation">Visual Studio Code, Terminal, Microsoft Sharepoint, Microsoft Word,
-                    Microsoft Excel, Microsoft Publisher, Microsoft Outlook.</p>
-                <p class="explanation-heading">Apple Applications and Browsers</p>
-                <p class="resume-explanation">Pages, iMovie, Firefox, Internet Explorer, Safari.</p>
-                <p class="explanation-heading">Adobe</p>
-                <p class="resume-explanation">Adobe Photoshop, Adobe Illustrator.</p>
-                <p class="explanation-heading">Social Media</p>
-                <p class="resume-explanation">Snapchat, Instagram, Facebook, Twitter.</p>
-                <br>
-
-                <!-- Work Experience -->
-                <p class="sub-heading">Work Experience</p>
-                <p class="resume-text"><strong>2016 &emsp; Heart Research Institute</strong></p>
-                <p class="explanation-heading">Tasks Performed</p>
-                <p class="resume-explanation"><strong>Customer Service</strong> &emsp; Responded to incoming calls.
-                    Screened telemarketing and direct sales calls while transferring customer enquiries to appropriate
-                    department.<br>
-                    <strong>Administration</strong> &emsp; Typed general communication and
-                    letters to customers and businesses as directed. Ensured accurate development of communication by
-                    providing correspondence to supervisor for approval. Copying/collation and filing of commercially
-                    sensitive documents. Compiling publication lists using ORCID software.<br>
-                    <strong>Records Processing</strong> &emsp; Entered customer information
-                    into internal records management system. Updated existing customer records while creating new data
-                    files as directed.
-                </p>
-                <br>
-
-                <p class="resume-text"><strong>2017 &emsp; Working With Children</strong></p>
-                <p class="explanation-heading">Sport Coaching</p>
-                <p class="resume-explanation">Queenwood School For Girls</p>
-                <p class="explanation-heading">Nannying</p>
-                <p class="resume-explanation">Primary School Students</p>
-
-                <br>
-
-                <!-- Current Work -->
-                <p class="sub-heading">Current Work</p>
-                <p class="resume-text"><strong>2019 - 2021 &emsp; The Boathouse Balmoral</strong></p>
-
-
-                <p>
-                    <a class="pdf-style" href="./assets/files/Carly-Jackson-Resume.pdf">Download PDF</a>
-                </p>
-            </main>
-        </main>
+        <!-- Navigation Bar -->
+        <nav class="nav-list">
+            <ul>
+                <a href="#about-me" class="a">About Me</a>
+                <!-- <a href="#portfolio-part" class="a">Portfolio</a> -->
+                <a class="a">
+                    <button id="portfolioButton" class="navButton">Portfolio</button>
+                </a>
+                <a href="#contact" class="a">Contact</a>
+                <a href="#resume" class="a">Resume</a>
+            </ul>
+        </nav>
 
         <main>
-            <!-- Portfolio -->
-            <!-- Carousel -->
-            <div id="carouselExampleIndicators" class="carousel slide full-width" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-
-                <div class="carousel-inner">
-                    <!-- Slide 1 -->
-                    <div class="carousel-item active">
-                        <a class="portfolio-image" href="https://caarlyjackson.github.io/Horiseon_Website/">
-                            <img class="d-block w-100 portfolio-image" src="./assets/images/CJ-Website-Screenshot-1.png"
-                                alt="First slide">
-                        </a>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="https://placeimg.com/1080/500/arch" alt="Second slide">
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="https://placeimg.com/1080/500/nature" alt="Third slide">
-                    </div>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <!-- Block 1 -->
+                    <img class="personal-img" src="assets/images/cj.png">
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+
+                <!-- Block 2 -->
+                <div class="flex-item">
+                    <p id="about-me" class="boldSmallTitle" style="font-weight: 600px !important;">About Me</p>
+                    <p class="aboutMeText">I am currently undertaking, and enjoying, the Sydney University & Trilogy
+                        Education Services Coding
+                        Boot Camp.<br>
+                        In my free time I enjoy writing and creating fictional characters, as well as detailed
+                        storylines
+                        for
+                        them and other supporting characters. I also like reading - books, quotes and philosophy,
+                        drawing,
+                        painting, and creating and editing photography for visual design/content in Adobe Photoshop
+                        and
+                        Adobe Illustrator.<br>
+                        My personal preference in design and creativity leans towards genres featuring rebellion and
+                        chaos,
+                        and contratingly, moral lessons.<br>
+                        I appreciate art that forces the audience to contemplate the highlighted social justice,
+                        emotionality, or even taboo issue presented, and in turn, often disturb the comforted, and
+                        comfort
+                        the disturbed.<br>
+                        I like to classify myself and my work as Chaotic Good; rebellious yet highly moral.</p>
+                    <br>
+                    <p class="chaotic-good-heading"><b>Chaotic Good</b></p>
+                    <p class="chaotic-good-def">Chaotic good is the best alignment you can be because it combines a
+                        good
+                        heart with a free spirit. Chaotic good can be a dangerous alignment when it disrupts the
+                        order
+                        of
+                        society and punishes those who do well for themselves.</p>
+
+                    <!-- <br>
+                    <br>
+                    <div class="quote section">
+                        <p class="personal-quote">We do not see the world for what it is.<br>
+                            We see it as we are.<br>
+                            Anaïs Nin</p>
+                    </div> -->
+                </div>
+
+                <!-- Block 3 -->
+                <div class="flex-item">
+                    <h2 id="contact" class="boldSmallTitle" class="boldSmallTitle">Contact</h2>
+                    <ul>
+                        <!-- <a class="button" href="carlysjackson2@gmail.com">Email</a> -->
+                        <a href="mailto:carlysjackson2@gmail.com" class="URLLinks a">Email</a>
+                        <p onclick="copyEmail()" id="emailCopyContent" class="urlShown hide">carlysjackson2@gmail.com
+                        </p>
+                        <a class="button a" href="https://www.linkedin.com/in/carly-jackson-00000">LinkedIn</a>
+                        <a class="button a" href="https://github.com/caarlyjackson">GitHub</a>
+                    </ul>
+                </div>
+
+                <!-- Block 4 -->
+                <div class="flex-item">
+                    <!-- Resume -->
+                    <h2 id="resume" class="boldSmallTitle">Resume</h2>
+                    <!-- Education -->
+                    <p class="sub-heading">Education</p>
+                    <p class="resume-text"><strong>2013 - 2014</strong> &emsp; Girls Grammar School</p>
+                    <p class="resume-text"><strong>2015 - 2018</strong> &emsp; Queenwood School for Girls</p>
+                    <p class="resume-text"><strong>2018</strong> &emsp; HSC Completed</p>
+                    <br>
+
+                    <!-- Software Skills -->
+                    <p class="sub-heading">Software Skills</p>
+                    <p class="explanation-heading">Code & Microsoft</p>
+                    <p class="resume-explanation">Visual Studio Code, Terminal, Microsoft Sharepoint, Microsoft
+                        Word,
+                        Microsoft Excel, Microsoft Publisher, Microsoft Outlook.</p>
+                    <p class="explanation-heading">Apple Applications and Browsers</p>
+                    <p class="resume-explanation">Pages, iMovie, Firefox, Internet Explorer, Safari.</p>
+                    <p class="explanation-heading">Adobe</p>
+                    <p class="resume-explanation">Adobe Photoshop, Adobe Illustrator.</p>
+                    <p class="explanation-heading">Social Media</p>
+                    <p class="resume-explanation">Snapchat, Instagram, Facebook, Twitter.</p>
+                    <br>
+
+                    <!-- Work Experience -->
+                    <p class="sub-heading">Work Experience</p>
+                    <p class="resume-text"><strong>2016 &emsp; Heart Research Institute</strong></p>
+                    <p class="explanation-heading">Tasks Performed</p>
+                    <p class="resume-explanation"><strong>Customer Service</strong> &emsp; Responded to incoming
+                        calls.
+                        Screened telemarketing and direct sales calls while transferring customer enquiries to
+                        appropriate
+                        department.<br>
+                        <strong>Administration</strong> &emsp; Typed general communication and
+                        letters to customers and businesses as directed. Ensured accurate development of
+                        communication
+                        by
+                        providing correspondence to supervisor for approval. Copying/collation and filing of
+                        commercially
+                        sensitive documents. Compiling publication lists using ORCID software.<br>
+                        <strong>Records Processing</strong> &emsp; Entered customer information
+                        into internal records management system. Updated existing customer records while creating
+                        new
+                        data
+                        files as directed.
+                    </p>
+                    <br>
+
+                    <p class="resume-text"><strong>2017 &emsp; Working With Children</strong></p>
+                    <p class="explanation-heading">Sport Coaching</p>
+                    <p class="resume-explanation">Queenwood School For Girls</p>
+                    <p class="explanation-heading">Nannying</p>
+                    <p class="resume-explanation">Primary School Students</p>
+                    <br>
+
+                    <!-- Current Work -->
+                    <p class="sub-heading">Current Work</p>
+                    <p class="resume-text"><strong>2019 - 2021 &emsp; The Boathouse Balmoral</strong></p>
+                    <!-- Resume PDF -->
+                    <p>
+                        <a class="pdf-style a" href="./assets/files/Carly-Jackson-Resume.pdf">Download PDF</a>
+                    </p>
+                </div>
+            </div>
+        </main>
+    </section>
+    </main>
+
+
+    <!-- Portfolio Page -->
+    <section class="portfolioPage hide">
+
+        <!-- Header/Title -->
+        <header>
+            <div.sticky class="PortfolioHeader">
+                <a>
+                    <h1 class="secondTitle">Carly Jackson</h1>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
+            </div.sticky>
+        </header>
+
+        <!-- Small Home Navigation -->
+        <nav class="nav-list portfolioNav">
+            <ul>
+                <a>
+                    <button id="HomeButton" class="navButton a">Home</button>
                 </a>
+            </ul>
+        </nav>
+
+        <!-- Portfolio Grid -->
+        <div class="flex-portfolio">
+            <!-- 1 -->
+            <div class="flex-item-portfolio left">
+                <!-- <div class="overlay"> -->
+                <img src="./assets/images/000001 copy.jpg" class="portfolioGridImage">
+                <div class="PortfolioText hide centered">000001</div>
+            </div>
+            <!-- 2 -->
+            <div class="flex-item-portfolio right">
+                <img src="./assets/images/000001 Pink copy.jpg" class="portfolioGridImage">
             </div>
 
-            <!-- Appended Portfolio Content Card -->
-            <div id="PortfolioCard"></div>
-            <h4 class="website-1-heading isActive">Horiseon Website</h4>
-        </main>
+            <!-- 3 -->
+            <div class="flex-item-portfolio left">
+                <img src="./assets/images/000032 copy.png" class="portfolioGridImage">
+                <div class="PortfolioText hide centered">000032</div>
+            </div>
+            <!-- 3 -->
+            <div class="flex-item-portfolio right">
+                <img src="./assets/images/000039_copy.png" class="portfolioGridImage">
+                <div class="PortfolioText hide centered">000039</div>
+            </div>
+            <!-- 4 -->
+            <div class="flex-item-portfolio left">
+                <img src="./assets/images/Carly-Jackson-Website-1.png" class="portfolioGridImage">
+            </div>
+        </div>
 
+    </section>
 
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- 1 -->
-        <main>
-            <!-- Portfolio -->
-            <article class="full-width">
-                <h2 id="portfolio-part">Portfolio</h2>
-                <!-- Carousel -->
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <!-- ITEM 1 -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <!-- Image (link) -->
-                            <a class="portfolio-image" href="https://caarlyjackson.github.io/Horiseon_Website/">
-                                <img class="d-block w-100 portfolio-image"
-                                    src="./assets/images/CJ-Website-Screenshot-1.png" alt="First slide">
-                            </a>
-                        </div>
-                        <!-- ITEM 2 -->
-                        <div class="carousel-item active">
-                            <!-- Image (link) -->
-                            <a class="portfolio-image" href="https://caarlyjackson.github.io/Horiseon_Website/">
-                                <img class="d-block w-100 portfolio-image"
-                                    src="./assets/images/CJ-Website-Screenshot-1.png" alt="First slide">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </main>
-
-        <!-- 1 -->
-        <main>
-            <!-- Portfolio -->
-            <article class="full-width">
-                <h2 id="portfolio-part">Portfolio</h2>
-                <!-- Carousel -->
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <!-- ITEM 1 -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <!-- Image (link) -->
-                            <a class="portfolio-image" href="https://caarlyjackson.github.io/Horiseon_Website/">
-                                <img class="d-block w-100 portfolio-image"
-                                    src="./assets/images/CJ-Website-Screenshot-1.png" alt="First slide">
-                            </a>
-
-                            <!-- Text Content -->
-
-                            <!-- Date -->
-                            <h6>MAR2021</h6>
-                            <!-- Title -->
-                            <div class="carouselTextContent">
-                                <a class="website-1-heading" href="https://caarlyjackson.github.io/Horiseon_Website/">
-                                    <h4 class="website-1-heading">Horiseon Website</h4>
-                                </a>
-                                <!-- Description -->
-                                <p class="work-info">
-                                    For the client, Horiseon, we refactored their existing code, and therefore, website,
-                                    using HTML
-                                    semantic structure to build and improve their current website to the set of
-                                    standards of new
-                                    technology, as well as optimising the site for search engines. In doing this, the
-                                    following semantic
-                                    elements were incorporated: article, aside, header and footer, sucessfully replacing
-                                    the vastly used
-                                    division element.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </main>
-
-        <!-- 2 -->
-        <!-- Block 5 -->
-        <main>
-            <!-- Portfolio -->
-            <article class="full-width">
-                <h2 id="portfolio-part">Portfolio</h2>
-                <!-- Carousel -->
-                <div id="carousel" class="carousel slide">
-                    <ol class="carousel-indicators">
-                        <li class="item1 active"></li>
-                        <li class="item2"></li>
-                        <li class="item3"></li>
-                    </ol>
-
-                    <!-- ITEM 1 -->
-                    <div class="carousel-inner" role="listbox">
-
-                        <div class="item active">
-                            <!-- Image (link) -->
-                            <a class="portfolio-image" href="https://caarlyjackson.github.io/Horiseon_Website/">
-                                <img class="d-block w-100 portfolio-image"
-                                    src="./assets/images/CJ-Website-Screenshot-1.png" alt="First slide">
-                            </a>
-
-                            <!-- Text Content -->
-
-                            <!-- Date -->
-                            <h6>MAR2021</h6>
-                            <!-- Title -->
-                            <div class="carouselTextContent">
-                                <a class="website-1-heading" href="https://caarlyjackson.github.io/Horiseon_Website/">
-                                    <h4 class="website-1-heading">Horiseon Website</h4>
-                                </a>
-                                <!-- Description -->
-                                <p class="work-info">
-                                    For the client, Horiseon, we refactored their existing code, and
-                                    therefore, website,
-                                    using HTML
-                                    semantic structure to build and improve their current website to the set
-                                    of
-                                    standards of new
-                                    technology, as well as optimising the site for search engines. In doing
-                                    this, the
-                                    following semantic
-                                    elements were incorporated: article, aside, header and footer,
-                                    sucessfully replacing
-                                    the vastly used
-                                    division element.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ITEM 2 -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <!-- Image (link) -->
-                            <a class="portfolio-image" href="https://caarlyjackson.github.io/Horiseon_Website/">
-                                <img class="d-block w-100 portfolio-image"
-                                    src="./assets/images/CJ-Website-Screenshot-1.png" alt="First slide">
-                            </a>
-
-                            <!-- Text Content -->
-
-                            <!-- Date -->
-                            <h6>APR2021</h6>
-                            <!-- Title -->
-                            <div class="carouselTextContent">
-                                <a class="website-1-heading" href="https://caarlyjackson.github.io/Horiseon_Website/">
-                                    <h4 class="website-1-heading">Horiseon Website</h4>
-                                </a>
-                                <!-- Description -->
-                                <p class="work-info">
-                                    For the client, Horiseon, we refactored their existing code, and therefore, website,
-                                    using HTML semantic structure to build and improve their current website to the set
-                                    of standards of new technology, as well as optimising the site for search engines.
-                                    In doing this, the
-                                    following semantic elements were incorporated: article, aside, header and footer,
-                                    sucessfully replacing the vastly used division element.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- ITEM 3 -->
-                    <div class="carousel-item">
-                        <!-- <a class="portfolio-image" href="https://caarlyjackson.github.io/Horiseon_Website/">
-                                <img class="d-block w-100 portfolio-image"
-                                    src="./assets/images/CJ-Website-Screenshot-1.png" alt="Third slide">
-                            </a> -->
-                    </div>
-                </div>
-                <!-- PREVIOUS BUTTON/LINK -->
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <!-- NEXT BUTTON/LINK -->
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-                </div>
-
-                <!-- Work Block 1 -->
-                <div class="carousel-item">
-                    <img src="..." alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>...</h5>
-                        <p>...</p>
-                    </div>
-                </div>
-                <!-- Work Block 1 -->
-                <!-- Image -->
-                <!-- <a class="portfolio-image" href="https://caarlyjackson.github.io/Horiseon_Website/">
-                    <img src="./assets/images/CJ-Website-Screenshot-1.png" alt="Horiseon" class="portfolio-image">
-                </a>
-                <h6>MAR2021</h6>
-
-                Description -->
-                <!-- <a class="website-1-heading" href="https://caarlyjackson.github.io/Horiseon_Website/">
-                    <h4 class="website-1-heading">Horiseon Website</h4>
-                </a>
-                <p class="work-info">
-                    For the client, Horiseon, we refactored their existing code, and therefore, website, using HTML
-                    semantic structure to build and improve their current website to the set of standards of new
-                    technology, as well as optimising the site for search engines. In doing this, the following semantic
-                    elements were incorporated: article, aside, header and footer, sucessfully replacing the vastly used
-                    division element.
-                </p> -->
-            </article>
-        </main>
-
-        <br>
-        <br>
-
-        <!-- Footer -->
-        <footer>
-            <h5 id="footer-text" class="footer-text">Made By Carly</h5>
-            <p id="footer-text" class="footer-location-text">Melborne // Sydney</p>
-        </footer>
-    </main>
+    <!-- Footer -->
+    <footer>
+        <h5 id="footer-text" class="footer-text">Made By Carly</h5>
+        <p id="footer-text" class="footer-location-text">Melborne // Sydney</p>
+    </footer>
 
     <script src="./assets/script/script.js"></script>
 
