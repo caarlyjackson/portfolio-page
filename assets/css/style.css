@@ -471,7 +471,7 @@ a:active {
     max-width: 100%;
     align-items: center;
     display: block;
-    cursor:ns-resize;
+    cursor:grab;
 }
 
 

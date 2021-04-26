@@ -18,3 +18,12 @@ WeatherDashboardButton.addEventListener("click", function () {
     portfolioFullNavigation.style.display = "block";
     WeatherDashboardPage.style.display = "block";
 });
+
+// TRAVEL APP
+const TravelAppButton = document.querySelector("#TravelAppBtn");
+const TravelAppPage = document.querySelector("#portfolio-TravelAppFull");
+TravelAppButton.addEventListener("click", function () {
+    portfolioGridPage.style.display = "none";
+    portfolioFullNavigation.style.display = "block";
+    TravelAppPage.style.display = "block";
+});
